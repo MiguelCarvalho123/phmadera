@@ -3008,14 +3008,14 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  color: #ff5151;
+  background-color: #ff4c4c;
+  border-color: #ff4c4c;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  background-color: #ff4c4c;
+  border-color: #ff4c4c;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
