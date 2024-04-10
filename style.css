@@ -4561,7 +4561,8 @@ fieldset:disabled .btn {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #0a58ca;
+  transition: 0.4s;
+  transform: scale(1.05);
 }
 
 .nav-link.disabled {
