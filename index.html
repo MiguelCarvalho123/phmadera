@@ -41,7 +41,6 @@
 
     function dado() {
       alert("Usuario = ADM  |  Senha = 123");
-      user.focus();
     }
 
   </script>
@@ -92,17 +91,17 @@
                 <form class="row g-3">
                   <div class="col-md-4">
                     <label for="user" class="form-label">Digite seu Usuário</label>
-                    <input type="text" class="form-control1" id="user" name="user" value="" required>
+                    <input type="text" class="form-control1" id="user" name="user" value="" placeholder="ADM" required>
                   </div>
                   <div class="col-md-4">
                     <label for="senha" class="form-label">Digite sua Senha</label>
-                    <input type="password" class="form-control1" id="senha" name="senha" value="" required autofocus>
+                    <input type="password" class="form-control1" id="senha" name="senha" value="" placeholder="123" required>
                   </div>
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" onclick="dado()">Dados</button>
                 <button type="button" class="btn btn-primary" onclick="login()">Entrar</button>
+                <button type="button" class="btn btn-secondary" onclick="dado()">Dados</button>
               </div>
             </div>
           </div>
