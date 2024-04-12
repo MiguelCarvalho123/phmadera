@@ -5618,7 +5618,13 @@ fieldset:disabled .btn {
 .card-img,
 .card-img-top,
 .card-img-bottom {
+  padding: 5%;
   width: 100%;
+}
+
+.card-img-top:hover {
+  transition: 0.4s;
+  transform: scale(1.05);
 }
 
 .card-img,
