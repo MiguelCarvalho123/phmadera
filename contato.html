@@ -21,18 +21,18 @@
 <body>
   <!-- Start Function -->
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const form = document.querySelector('.form');
-        form.addEventListener('submit', function(event) {
-            if (form.checkValidity()) {
-                event.preventDefault(); // Prevenir submissão para demonstrar o alerta
-                alert('Sua Mensagem foi Enviada com Sucesso');
-                form.reset(); // Limpar os campos do formulário
-                // Aqui você pode retirar a linha event.preventDefault() para permitir a submissão do formulário normalmente após o alerta
-            }
-        });
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector('.form');
+      form.addEventListener('submit', function (event) {
+        if (form.checkValidity()) {
+          event.preventDefault(); // Prevenir submissão para demonstrar o alerta
+          alert('Sua Mensagem foi Enviada com Sucesso !');
+          form.reset(); // Limpar os campos do formulário
+          // Aqui você pode retirar a linha event.preventDefault() para permitir a submissão do formulário normalmente após o alerta
+        }
+      });
     });
-    </script>
+  </script>
   <!-- End Function -->
   <!-- Start Navbar -->
 
@@ -71,23 +71,28 @@
     <h2>Nos de Seu Feedback</h2>
     <div class="mb-3">
       <label for="exampleInputName1" class="form-label">Nome</label>
-      <input type="name" name="nome" class="form-control" id="exampleInputName1" placeholder="Nome da Silva" aria-describedby="nameHelp" autofocus required>
+      <input type="name" name="nome" class="form-control" id="exampleInputName1" placeholder="Nome da Silva"
+        aria-describedby="nameHelp" autofocus required>
     </div>
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Email</label>
-      <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="seuemail@gmail.com" aria-describedby="emailHelp" required>
+      <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="seuemail@gmail.com"
+        aria-describedby="emailHelp" required>
     </div>
     <div class="mb-3">
       <label for="exampleInputTel" class="form-label">Telefone</label>
-      <input type="tel" name="tel" class="form-control" id="exampleInputTel1" placeholder="(01) 23456-7890" aria-describedby="telHelp" required>
+      <input type="tel" name="tel" class="form-control" id="exampleInputTel1" placeholder="(01) 23456-7890"
+        aria-describedby="telHelp" required>
     </div>
     <div class="mb-3">
       <label for="exampleInputSub" class="form-label">Assunto</label>
-      <input type="text" name="assunto" class="form-control" id="exampleInputSub1" placeholder="Gostei do Serviço !" aria-describedby="subHelp" required>
+      <input type="text" name="assunto" class="form-control" id="exampleInputSub1" placeholder="Gostei do Serviço !"
+        aria-describedby="subHelp" required>
     </div>
     <div class="mb-3">
       <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Digite Sua Mensagem" rows="3"></textarea>
+      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Digite Sua Mensagem"
+        rows="3"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
     <button type="reset" class="btn btn-secondary">Limpar</button>
