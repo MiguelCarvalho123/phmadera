@@ -30,27 +30,31 @@
             produtoPreco = preco;
             prod_select.push(id);
             prod_select.push(preco);
-            alert("Produto adicionado no carrinho!")
+            alert("Produto Adicionado no Carrinho !")
         }
 
         function verCompras() {
             if (prod_select.length === 0) {
-                alert("Carrinho vazio");
+                alert("Carrinho Vazio");
             } else {
-                alert("Produtos no carrinho:\n\n" + prod_select.join(" \n"));
+                alert("Produtos no Carrinho:\n\n" + prod_select.join(" \n"));
             }
 
         }
         function finalizar(){
             if (prod_select.length === 0) {
-                alert("Carrinho vazio");
+                alert("Carrinho Vazio");
             } else {
                 var total = 0; 
                 for (var i = 1; i < prod_select.length; i += 2) {
                     total += parseFloat(prod_select[i].substring(2).replace(',', '.')); 
                 }
-                alert("O total da compra é: R$" + total.toFixed(2));
+                alert("O Total da Compra é: R$" + total.toFixed(2));
             }
+        }
+        function limpa(){
+            
+            
         }
     </script>
     <!-- End Function -->
@@ -95,7 +99,7 @@
         </div>
         <div class="offcanvas-body">
             <div>
-                Aqui está o seu Carrinho
+                Aqui Está o Seu Carrinho
                 <br>
             </div>
             <div>
@@ -104,8 +108,13 @@
             <div class="btn btn-primary" onclick="verCompras()">
                 Ver Compras
             </div>
+            &nbsp;
             <div class="btn btn-primary" onclick="finalizar()">
                 Finalizar
+            </div> 
+            <br><br>
+            <div class="btn btn-secondary" onclick="limpa()">
+                Esvaziar Carrinho
             </div>
         </div>
     </div>
