@@ -32,14 +32,6 @@ footer img:hover {
   transform: scale(1.1);
 }
 
-.sair {
-  text-decoration: none;
-}
-
-.sair:hover {
-  color: rgb(255, 255, 255);
-}
-
 .cart {
   float: right;
   margin-right: 2%;
