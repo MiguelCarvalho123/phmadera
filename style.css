@@ -5601,6 +5601,19 @@ fieldset:disabled .btn {
   border-radius: 0.25rem;
 }
 
+.card1 {
+  margin-top: -50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
 .card>hr {
   margin-right: 0;
   margin-left: 0;
@@ -8379,8 +8392,16 @@ fieldset:disabled .btn {
   height: 100vh !important;
 }
 
+.vh-60 {
+  height: 60vh !important;
+}
+
 .min-vh-100 {
   min-height: 100vh !important;
+}
+
+.min-vh-60 {
+  min-height: 60vh !important;
 }
 
 .flex-fill {
