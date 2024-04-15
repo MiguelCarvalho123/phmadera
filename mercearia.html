@@ -15,7 +15,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>PHAM - Mercearia</title>
+    <title>PHAM - Compras</title>
 </head>
 
 <body>
@@ -83,9 +83,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link " aria-current="page" href="inicio.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="compra.html">Compras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Compras</a></li>
                     <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nós</a></li>
-                    <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="perfil.html">Meu Perfil</a></li>
                     <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                 </ul>
             </div>
@@ -127,17 +127,16 @@
     </div>
     </div>
     <!-- End Offcanvas-->
+    <div class="sidebar position-fixed">
+        <div class="container-fluid">
+            <div class="row">
 
-    <div class="container-fluid">
-        <div class="row">
-
-            <!-- Start Sidebar -->
-            <div class="col-md-3">
+                <!-- Start Sidebar -->
                 <div class="d-inline-flex flex-column flex-shrink-0 bg-light" style="width: 4.5rem;">
-                    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                    <ul class="nav nav-pills nav-pills1 nav-flush flex-column mb-auto text-center">
                         <li class="nav-item">
-                            <a href="compra.html" class="nav-link py-3 border-bottom" title="Em Alta"
-                                data-bs-toggle="tooltip" data-bs-placement="right">
+                            <a href="compra.html" class="nav-link py-3 border-bottom" title="Em Alta" data-bs-toggle="tooltip"
+                                data-bs-placement="right">
                                 <img src="img/fire-icon.png" />
                             </a>
                         </li>
@@ -160,8 +159,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link py-3 border-bottom" title="Mercearia" data-bs-toggle="tooltip"
-                                data-bs-placement="right">
+                            <a href="mercearia.html" class="nav-link py-3 border-bottom" title="Mercearia"
+                                data-bs-toggle="tooltip" data-bs-placement="right">
                                 <img src="img/sugar-icon.png" />
                             </a>
                         </li>
@@ -177,31 +176,9 @@
                                 <img src="img/clean-icon.png" />
                             </a>
                         </li>
-                        <li>
-                            <a class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip"
-                                data-bs-placement="right">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip"
-                                data-bs-placement="right">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip"
-                                data-bs-placement="right">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip"
-                                data-bs-placement="right">
-                            </a>
-                        </li>
                     </ul>
-                    <div class="dropdown border-top">
-                        <a href="#"
-                            class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle"
-                            title="ADM" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="color-sidebar">
+                        <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" title="ADM" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="material-symbols-outlined">person</span>
                         </a>
                         <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
@@ -211,119 +188,121 @@
                     </div>
                 </div>
             </div>
-            <!-- End Sidebar -->
+        </div>
+    </div>
+    <!-- End Sidebar -->
 
-            <!-- Start Card -->
-            <div class="col-md-9">
-                <div class="row">
-                    <h1>Mercearia</h1>
+    <!-- Start Card -->
+    <div class="card-side">
+        <div class="col-md-9">
+            <div class="row">
+                <h1>Mercearia</h1>
 
-                    <!-- Repita Este Bloco Para Cada Card -->
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/uniao.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Açucar União Refinado</h5>
-                                <p class="card-text">R$3,99</p>
-                                <a class="btn btn-primary" onclick="produto('Açúcar:','R$3,99')">Adicionar ao
-                                    Carrinho</a>
-                            </div>
+                <!-- Repita Este Bloco Para Cada Card -->
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/uniao.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Açucar União Refinado</h5>
+                            <p class="card-text">R$3,99</p>
+                            <a class="btn btn-primary" onclick="produto('Açúcar:','R$3,99')">Adicionar ao
+                                Carrinho</a>
                         </div>
                     </div>
-                    <!-- Fim do Bloco de Card -->
+                </div>
+                <!-- Fim do Bloco de Card -->
 
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <br><br><br>
-                            <img src="img/chocolate.png" class="card-img-top" alt="...">
-                            <br><br>
-                            <div class="card-body">
-                                <h5 class="card-title">Barra de Chocolate Lacta</h5>
-                                <p class="card-text">R$6,99</p>
-                                <a class="btn btn-primary" onclick="produto('Chocolate:', 'R$6,99')">Adicionar ao
-                                    Carrinho</a>
-                            </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <br><br><br>
+                        <img src="img/chocolate.png" class="card-img-top" alt="...">
+                        <br><br>
+                        <div class="card-body">
+                            <h5 class="card-title">Barra de Chocolate Lacta</h5>
+                            <p class="card-text">R$6,99</p>
+                            <a class="btn btn-primary" onclick="produto('Chocolate:', 'R$6,99')">Adicionar ao
+                                Carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/guarana.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Guaraná Antarctica Lata</h5>
-                                <p class="card-text">R$2,79</p>
-                                <a class="btn btn-primary" onclick="produto('Guaraná:', 'R$2,70')">Adicionar ao
-                                    Carrinho</a>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/guarana.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Guaraná Antarctica Lata</h5>
+                            <p class="card-text">R$2,79</p>
+                            <a class="btn btn-primary" onclick="produto('Guaraná:', 'R$2,70')">Adicionar ao
+                                Carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/uniao.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Açucar União Refinado</h5>
-                                <p class="card-text">R$3,99</p>
-                                <a class="btn btn-primary" onclick="produto('Açúcar:','R$3,99')">Adicionar ao
-                                    Carrinho</a>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/uniao.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Açucar União Refinado</h5>
+                            <p class="card-text">R$3,99</p>
+                            <a class="btn btn-primary" onclick="produto('Açúcar:','R$3,99')">Adicionar ao
+                                Carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <br><br><br>
-                            <img src="img/chocolate.png" class="card-img-top" alt="...">
-                            <br><br>
-                            <div class="card-body">
-                                <h5 class="card-title">Barra de Chocolate Lacta</h5>
-                                <p class="card-text">R$6,99</p>
-                                <a class="btn btn-primary" onclick="produto('Chocolate:', 'R$6,99')">Adicionar ao
-                                    Carrinho</a>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <br><br><br>
+                        <img src="img/chocolate.png" class="card-img-top" alt="...">
+                        <br><br>
+                        <div class="card-body">
+                            <h5 class="card-title">Barra de Chocolate Lacta</h5>
+                            <p class="card-text">R$6,99</p>
+                            <a class="btn btn-primary" onclick="produto('Chocolate:', 'R$6,99')">Adicionar ao
+                                Carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/guarana.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Guaraná Antarctica Lata</h5>
-                                <p class="card-text">R$2,79</p>
-                                <a class="btn btn-primary" onclick="produto('Guaraná:', 'R$2,70')">Adicionar ao
-                                    Carrinho</a>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/guarana.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Guaraná Antarctica Lata</h5>
+                            <p class="card-text">R$2,79</p>
+                            <a class="btn btn-primary" onclick="produto('Guaraná:', 'R$2,70')">Adicionar ao
+                                Carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/uniao.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Açucar União Refinado</h5>
-                                <p class="card-text">R$3,99</p>
-                                <a class="btn btn-primary" onclick="produto('Açúcar:','R$3,99')">Adicionar ao
-                                    Carrinho</a>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/uniao.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Açucar União Refinado</h5>
+                            <p class="card-text">R$3,99</p>
+                            <a class="btn btn-primary" onclick="produto('Açúcar:','R$3,99')">Adicionar ao
+                                Carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <br><br><br>
-                            <img src="img/chocolate.png" class="card-img-top" alt="...">
-                            <br><br>
-                            <div class="card-body">
-                                <h5 class="card-title">Barra de Chocolate Lacta</h5>
-                                <p class="card-text">R$6,99</p>
-                                <a class="btn btn-primary" onclick="produto('Chocolate:', 'R$6,99')">Adicionar ao
-                                    Carrinho</a>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <br><br><br>
+                        <img src="img/chocolate.png" class="card-img-top" alt="...">
+                        <br><br>
+                        <div class="card-body">
+                            <h5 class="card-title">Barra de Chocolate Lacta</h5>
+                            <p class="card-text">R$6,99</p>
+                            <a class="btn btn-primary" onclick="produto('Chocolate:', 'R$6,99')">Adicionar ao
+                                Carrinho</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/guarana.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Guaraná Antarctica Lata</h5>
-                                <p class="card-text">R$2,79</p>
-                                <a class="btn btn-primary" onclick="produto('Guaraná:', 'R$2,70')">Adicionar ao
-                                    Carrinho</a>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/guarana.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Guaraná Antarctica Lata</h5>
+                            <p class="card-text">R$2,79</p>
+                            <a class="btn btn-primary" onclick="produto('Guaraná:', 'R$2,70')">Adicionar ao
+                                Carrinho</a>
                         </div>
                     </div>
                 </div>
@@ -349,13 +328,13 @@
                     <a href="inicio.html" class="nav-link px-2 text-muted">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="compra.html" class="nav-link px-2 text-muted">Compras</a>
+                    <a href="#" class="nav-link px-2 text-muted">Compras</a>
                 </li>
                 <li class="nav-item">
                     <a href="sobre.html" class="nav-link px-2 text-muted">Sobre Nós</a>
                 </li>
                 <li class="nav-item">
-                    <a href="perfil.html" class="nav-link px-2 text-muted">Perfil</a>
+                    <a href="perfil.html" class="nav-link px-2 text-muted">Meu Perfil</a>
                 </li>
                 <li class="nav-item">
                     <a href="contato.html" class="nav-link px-2 text-muted">Contato</a>
@@ -367,4 +346,4 @@
 
 </body>
 
-</html>
+</html
