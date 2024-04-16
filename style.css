@@ -78,6 +78,12 @@ footer img:hover {
 .nav-pills1{
   background: var(--bs-gray-200);
 }
+
+.color-pham {
+  color: red;
+  font-weight: bold;
+}
+
 /*---*/
 :root {
   --bs-blue: #0d6efd;
@@ -3690,6 +3696,22 @@ fieldset:disabled .btn {
 }
 
 .btn-primary1:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
+  color: #fff;
+  background-color: #c40000e3;
+  border-color: #c40000e3;
+}
+
+.btn-primary2 {
+  margin-top: -5%;
+  width: 20%;
+  color: #fff;
+  background-color: #ff4c4c;
+  border-color: #ff4c4c;
+}
+
+.btn-primary2:hover {
   transition: 0.4s;
   transform: scale(1.1);
   color: #fff;
