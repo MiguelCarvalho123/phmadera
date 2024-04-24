@@ -387,7 +387,9 @@
 
 /*** Banner Section Start ***/
 .banner .banner-btn:hover {
-    background: var(--bs-primary);
+    transition: 0.4s;
+    transform: scale(1.05);
+    background: #ff3232e3;
 }
 /*** Banner Section End ***/
 
@@ -405,7 +407,7 @@
 }
 
 .counter h4 {
-    color: var(--bs-primary);
+    color: #ff4c4c;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
