@@ -56,32 +56,43 @@ footer img:hover {
   margin-left: 30%;
   margin-bottom: 5%;
 }
-.sidebar { 
+
+.sidebar {
   top: 90px;
   left: 10px;
   bottom: 90px;
-  z-index: 1000; /* Garanta que a barra lateral fique acima de outros conteúdos */
+  z-index: 1000;
+  /* Garanta que a barra lateral fique acima de outros conteúdos */
 }
+
 @media (min-width: 768px) {
   .sidebar {
-      width: 250px; /* Ajuste a largura para telas maiores */
+    width: 250px;
+    /* Ajuste a largura para telas maiores */
   }
 }
 
-.card-side{
+.card-side {
   margin-left: 20%;
 }
-.color-sidebar{
+
+.color-sidebar {
   margin-top: 6px;
-  background-color:var(--bs-gray-200);
+  background-color: var(--bs-gray-200);
 }
-.nav-pills1{
+
+.nav-pills1 {
   background: var(--bs-gray-200);
 }
 
 .color-pham {
   color: red;
   font-weight: bold;
+}
+
+img.img-fluid.w-100.rounded:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
 }
 
 /*---*/
@@ -3713,6 +3724,22 @@ fieldset:disabled .btn {
 }
 
 .btn-primary2:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
+  color: #fff;
+  background-color: #c40000e3;
+  border-color: #c40000e3;
+}
+
+.btn-primary3 {
+  margin-top: -5%;
+  width: 100%;
+  color: #fff;
+  background-color: #ff4c4c;
+  border-color: #ff4c4c;
+}
+
+.btn-primary3:hover {
   transition: 0.4s;
   transform: scale(1.1);
   color: #fff;
